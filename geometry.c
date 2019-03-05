@@ -20,7 +20,8 @@ typedef struct{
 int main()
 {
 	int z;
-	printf("1-crerate cricle\n2-create triangle\n3-exit programm\n");
+	zhenkya:
+	printf("1-crerate cricle\n2-create triangle\nanything else-exit programm\n");
 	scanf("%d", &z);
 	if (z==1)
 	{
@@ -32,6 +33,7 @@ int main()
 		float perimeter=2*pi*c.r;
 		float area=pi*c.r*c.r;
 		printf("perimeter = %f\narea = %f\n", perimeter, area);
+		goto zhenkya;
 	}
 	if (z==2)
 	{
@@ -55,7 +57,13 @@ int main()
 		float p2=p/2;
 		float area=sqrt(p2*(p2-ab)*(p2-ac)*(p2-bc));
 		printf("perimeter= %f\narea= %f\n", p, area);
+		goto zhenkya;
 		}
 	}
+	else
+	{
+		goto evgesha;
+	}
+evgesha:
 return 0;
 }
